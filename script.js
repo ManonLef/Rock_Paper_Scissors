@@ -12,7 +12,7 @@ function game() {
     let computerSelection = computerPlay();
 
     if (rounds <= 5) {
-        let playerSelection = prompt("What will you throw at R2-D2? Just type in; rock, paper or scissors");
+        let playerSelection = prompt("What will you throw at R2-D2? Just type: rock, paper or scissors");
         console.log(playRound(playerSelection, computerSelection));
     }  else if (rounds > 5) {
         console.log(endGame());
