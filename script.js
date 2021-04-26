@@ -12,7 +12,7 @@ function game() {
     let computerSelection = computerPlay();
 
     if (rounds <= 5) {
-        let playerSelection = window.prompt("What will you throw at R2-D2?");
+        let playerSelection = prompt("What will you throw at R2-D2?");
         console.log(playRound(playerSelection, computerSelection));
     }  else if (rounds > 5) {
         console.log(endGame());
