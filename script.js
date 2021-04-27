@@ -54,9 +54,9 @@ function playRound(playerSelection, computerSelection) {
 
 function endGame() {
     if (computerScore > playerScore) {
-        console.log("* GAME OVER * YOU LOSE! You got pulverized by a cute robot.")
+        return("* GAME OVER * YOU LOSE! You got pulverized by a cute robot.")
     } else {
-        console.log("* GAME OVER * YOU WIN! But beware of the sequel. Return of the astromech droids. You read that right... DroidS")
+        return("* GAME OVER * YOU WIN! But beware of the sequel. Return of the astromech droids. You read that right... DroidS")
     }
 }
 
