@@ -20,8 +20,12 @@ function game() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    rounds++
+    if (playerSelection.toLowerCase !== 'rock', 'paper, scissors') {
+        return("you can only throw a rock, paper or scissors at this time.")
+    }
     
+    rounds++
+
     if (playerSelection.toLowerCase() === computerSelection) { 
         computerScore++;
         return("your objects collided mid-air, it's a tie. " + playerScore + " for you and " + computerScore + " for R2-D2.");   
